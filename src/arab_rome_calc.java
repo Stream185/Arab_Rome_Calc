@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
-public class Main {
+public class arab_rome_calc {
     public static Scanner sc = new Scanner(System.in);
     static String result;
     public static String numToRoman(int Arabian){
@@ -42,14 +42,14 @@ public class Main {
                 num1 = Integer.parseInt(str1);
                 num2 = Integer.parseInt(str3);
             }catch(NumberFormatException e){
-                System.out.println("trows Exception // т.к. по заданию ввод от 1 до 10, не более");
+                System.out.println("trows Exception // т.к. ввод только от 1 до 10, не более");
                 System.exit(1);
             }
             if(num1 > 10 || num2 > 10){
                 try{
                     throw new IOException();
                 }catch(IOException e){
-                    System.out.println("trows Exception // т.к. по заданию ввод от 1 до 10, не более");
+                    System.out.println("trows Exception // т.к. ввод только от 1 до 10, не более");
                     System.exit(1);
                 }
             }
@@ -75,7 +75,7 @@ public class Main {
                 try {
                     throw new IOException();
                 }catch(IOException e){
-                    System.out.println("trows Exception // т.к. формат строки не удовлетворяет заданию - два операнда и один оператор, через пробел");
+                    System.out.println("throws Exception // т.к. формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, *, /) через пробел.");
                 }
             }
             String a;
@@ -106,7 +106,7 @@ public class Main {
                 try{
                     throw new IOException();
                 }catch(IOException e){
-                    System.out.println("throws Exception //т.к. используются одновременно разные системы счисления");
+                    System.out.println("throws Exception // т.к. используются одновременно разные системы счисления");
                     return;
                 }
             }
@@ -114,7 +114,7 @@ public class Main {
                 try{
                     throw new IOException();
                 }catch(IOException e){
-                    System.out.println("throws Exception //т.к. используются одновременно разные системы счисления");
+                    System.out.println("throws Exception / /т.к. используются одновременно разные системы счисления");
                     return;
                 }
             }
@@ -127,7 +127,7 @@ public class Main {
                 try {
                     System.out.println(numToRoman(resultRome));
                 } catch (RuntimeException e) {
-                    System.out.println("throws Exception //т.к.в римской системе нет отрицательных чисел");
+                    System.out.println("throws Exception // т.к. в римской системе нет отрицательных чисел");
                 }
             }
             if (a1 & a2){
