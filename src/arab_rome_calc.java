@@ -67,7 +67,7 @@ public class arab_rome_calc {
 
         public static void main(String[] args) throws ArrayIndexOutOfBoundsException {
             System.out.println("Введите операцию через пробел, например 2 + 2 или VI / III");
-            String[] roman1 = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+            String[] rome = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
             String[] arab = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
             String userInput = sc.nextLine();
             String[] roman = userInput.split(" ");
@@ -88,11 +88,11 @@ public class arab_rome_calc {
             }
             boolean r1 = false, r2 = false;
             boolean a1 = false, a2 = false;
-            for (int i = 0; i < roman1.length; i++){
-                if (roman[0].contains(roman1[i])){
+            for (int i = 0; i < rome.length; i++){
+                if (roman[0].contains(rome[i])){
                     r1 = true;
                 }
-                if(roman[2].contains(roman1[i])){
+                if(roman[2].contains(rome[i])){
                     r2 = true;
                 }
                 if (roman[0].contains(arab[i])){
